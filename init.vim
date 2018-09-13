@@ -1,5 +1,7 @@
 set number
-set tabstop=3
+set tabstop=2
+set shiftwidth=2
+set expandtab
 
 call plug#begin('~/.local/share/nvim/plugged')
 "Para snipmate
@@ -11,6 +13,7 @@ Plug 'garbas/vim-snipmate'
 Plug 'https://github.com/mattn/emmet-vim.git'
 " Git, tree y commenter
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 
@@ -23,8 +26,11 @@ Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 map <C-n> :NERDTreeToggle<CR>
-" map <C-p> :FufFile<CR>
 tnoremap <Esc> <C-\><C-n>
-" map <C-m> :vsp term://bash /home/jaykob/test.sh<CR>
-map <C-m> :vsp term://bash ./test.sh<CR>
+
+
+map <C-w>M :vsp term://zsh<CR>
+map <C-w>U :sp term://zsh<CR>
+map <C-w>Y :tabe term://zsh<CR>
+
 
