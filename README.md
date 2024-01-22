@@ -1,6 +1,14 @@
 # mynvimconfigfiles
-nvim configuration files
 
 El contenido de este repositorio son los archivos que van en ~/.config/nvim
 
+## Despues de installar neovim (probado en mac)
+
+```bash
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
+Y despues dentro de nvim
+:PlugInstall
 
