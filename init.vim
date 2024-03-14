@@ -1,7 +1,7 @@
 set number
 set tabstop=2
 set shiftwidth=2
-set expandtab
+set noexpandtab
 
 call plug#begin('~/.local/share/nvim/plugged')
 "Para snipmate
@@ -28,6 +28,8 @@ call plug#end()
 map <C-n> :NERDTreeToggle<CR>
 tnoremap <Esc> <C-\><C-n>
 
+" Disable mouse capturing
+set mouse=
 
 map <C-w>M :vsp term://zsh<CR>
 map <C-w>U :sp term://zsh<CR>
